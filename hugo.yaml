@@ -1,0 +1,20 @@
+baseURL: https://ladislav-24.github.io/
+locale: en-us
+title: intruder
+enableRobotsTXT: true
+
+params:
+  description: Documenting my journey in the field of cybersecurity and sharing my knowledge with the world.
+  author: ladislav
+
+taxonomies:
+  tag: tags
+
+menus:
+  main:
+    - name: Posts
+      pageRef: /posts
+      weight: 10
+    - name: About
+      pageRef: /about
+      weight: 20

@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <section class="hero">
+    <p class="eyebrow">hello, world.</p>
+    <h1>Thoughts, notes,<br><span>&amp; curious things.</span></h1>
+    <p class="lede">{{ site.Params.description }}</p>
+    <a class="button" href="{{ relURL "posts/" }}">Read the posts <span aria-hidden="true">→</span></a>
+  </section>
+
+  {{ $posts := where site.RegularPages "Section" "posts" }}
+  {{ if $posts }}
+    <section class="recent">
+      <div class="section-heading">
+        <h2>Latest posts</h2>
+        <a href="{{ relURL "posts/" }}">View all</a>
+      </div>
+      <div class="post-list">
+        {{ range first 5 $posts }}{{ partial "post-row.html" . }}{{ end }}
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

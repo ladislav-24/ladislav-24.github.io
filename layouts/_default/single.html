@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <article class="article">
+    <header class="article-header">
+      {{ if eq .Section "posts" }}<p class="eyebrow">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      {{ with .GetTerms "tags" }}
+        <div class="article-tags">{{ range . }}<a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}</div>
+      {{ end }}
+    </header>
+    <div class="prose">{{ .Content }}</div>
+  </article>
+{{ end }}

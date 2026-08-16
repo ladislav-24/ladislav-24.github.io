@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <header class="page-header">
+    <p class="eyebrow">{{ if eq .Kind "taxonomy" }}filed under{{ else }}archive{{ end }}</p>
+    <h1>{{ .Title }}{{ if eq .Kind "taxonomy" }}<span class="accent">.</span>{{ end }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+
+  {{ if eq .Section "posts" }}
+    {{ $tags := slice }}
+    {{ range .Pages }}{{ range .Params.tags }}{{ $tags = $tags | append . }}{{ end }}{{ end }}
+    {{ $tags = uniq $tags | sort }}
+    {{ if $tags }}
+      <div class="filters" aria-label="Filter posts by tag">
+        <button class="tag-filter active" type="button" data-filter="all" aria-pressed="true">all</button>
+        {{ range $tags }}<button class="tag-filter" type="button" data-filter="{{ . | urlize }}" aria-pressed="false">{{ . }}</button>{{ end }}
+      </div>
+    {{ end }}
+  {{ end }}
+
+  <div class="post-list" id="post-list">
+    {{ range .Pages }}{{ partial "post-row.html" . }}{{ else }}<p class="empty">Nothing here yet.</p>{{ end }}
+  </div>
+
+  {{ if eq .Section "posts" }}
+    <p class="empty filter-empty" hidden>No posts match that tag.</p>
+    <script src="{{ relURL "js/filter.js" }}" defer></script>
+  {{ end }}
+{{ end }}

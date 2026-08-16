@@ -1,0 +1,8 @@
+<article class="post-row" data-tags="{{ with .Params.tags }}{{ delimit (apply . "urlize" ".") " " }}{{ end }}">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+  <div>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ with .Params.tags }}<div class="tags">{{ range . }}<span>#{{ . }}</span>{{ end }}</div>{{ end }}
+  </div>
+</article>

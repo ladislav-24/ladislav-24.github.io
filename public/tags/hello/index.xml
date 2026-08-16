@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Hello on intruder</title>
+		<link>http://localhost:1313/tags/hello/</link>
+		<description>Recent content in Hello on intruder</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 15 Aug 2026 20:51:13 -0300</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/hello/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Hello World!</title>
+				<link>http://localhost:1313/posts/helloworld/</link>
+				<pubDate>Sat, 15 Aug 2026 20:51:13 -0300</pubDate>
+				<guid>http://localhost:1313/posts/helloworld/</guid>
+				<description>&lt;p&gt;Welcome to my corner of the internet. This is where I write about code, ideas,&#xA;and the useful things I discover along the way.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
