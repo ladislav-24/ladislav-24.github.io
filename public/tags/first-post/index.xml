@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>intruder</title>
-		<link>http://localhost:1313/</link>
-		<description>Recent content on intruder</description>
+		<title>First-Post on intruder</title>
+		<link>http://localhost:1313/tags/first-post/</link>
+		<description>Recent content in First-Post on intruder</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -12,20 +12,13 @@
 		
 			<lastBuildDate>Sat, 15 Aug 2026 20:51:13 -0300</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/tags/first-post/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Hello World!</title>
 				<link>http://localhost:1313/posts/helloworld/</link>
 				<pubDate>Sat, 15 Aug 2026 20:51:13 -0300</pubDate>
 				<guid>http://localhost:1313/posts/helloworld/</guid>
 				<description>&lt;p&gt;Welcome to my corner of the internet, where I document every step in&#xA;my journey to becoming a cybersecurity professional.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>About</title>
-				<link>http://localhost:1313/about/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/about/</guid>
-				<description>&lt;p&gt;Hi. My real name is Juan. I go by &lt;strong&gt;ladislav&lt;/strong&gt; online, and I was born in Montevideo, Uruguay. I built this blog mainly to document my progress and also showcase my abilities as I improve.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>
