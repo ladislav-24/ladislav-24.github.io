@@ -1,0 +1,9 @@
+# Hugo generates these locally and in CI.
+/public/
+/.hugo_build.lock
+/resources/_gen/
+
+# Common editor and OS metadata.
+.DS_Store
+.idea/
+.vscode/
