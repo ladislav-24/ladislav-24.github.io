@@ -6,5 +6,4 @@ description: 'This is intruder.'
 tags: ['introduction']
 ---
 
-Welcome to my corner of the internet, where I document every step in
-my journey to becoming a cybersecurity professional.
+Welcome to my corner of the internet, where I document every step in my journey to becoming a cybersecurity professional. This is intruder.
